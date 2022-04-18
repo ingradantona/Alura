@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    /*var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x, y, largura, altura, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x,y,largura,altura);
+
+    }
+    function desenhaBorda(x,y,largura,altura,cor) {
+        
+        pincel.fillStyle = cor;
+        pincel.fillRect = (x,y,largura,altura); <---- o erro está no sinal de igual na função
+    }
+
+    desenhaQuadrado(0,0,20,20,"green");
+    desenhaBorda(0,0,20,20,"black");
+    desenhaQuadrado(20,0,20,20,"green")*/
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x,y,tamanho,cor) {
+
+        pincel.fillStyle = cor;
+        pincel.fillRect (x,y,tamanho,tamanho);
+
+        pincel.strokeStyle = "black";
+        pincel.strokeRect (x,y,tamanho,tamanho);
+
+    }
+
+    desenhaQuadrado(0,0,100,"green")
+    desenhaQuadrado(100,0,100,"green")
+    desenhaQuadrado(200,0,100,"green")
+    desenhaQuadrado(300,0,100,"white")
+    
+
+</script>
